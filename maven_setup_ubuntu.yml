@@ -10,7 +10,7 @@
 
     - name: Install Maven specific version
       apt:
-        name: maven=3.9.9
+        name: maven=3.8.7
         state: present
       become: true
       become_user: root
