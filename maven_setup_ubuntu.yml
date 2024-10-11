@@ -1,0 +1,16 @@
+---
+- name: Install a specific version of Maven
+  hosts: jenkinsServers
+  become: true
+  become_user: ubuntu
+  tasks:
+    - name: Update the package cache
+      apt:
+        update_cache: yes
+
+    - name: Install Maven specific version
+      apt:
+        name: maven=3.9.9
+        state: present
+      become: true
+      become_user: root
