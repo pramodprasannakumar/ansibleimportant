@@ -1,0 +1,4 @@
+ansible-playbook install_tomcat.yml(filename)
+
+ansible-playbook <yml filename> -e "action=start"
+ansible-playbook <yml file> -e "action=stop"
